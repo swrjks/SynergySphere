@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ color-scheme: dark; }
+
+/* Core */
+.card{ @apply bg-panel/80 backdrop-blur border border-white/5 rounded-2xl p-4 shadow; }
+.btn{ @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-semibold bg-brand/90 hover:bg-brand text-slate-900; }
+.input{ @apply w-full rounded-xl bg-slate-900/60 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand; }
+.link{ @apply text-brand hover:underline; }
+
+/* Extras for clean UI */
+.glow{ box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 6px 24px rgba(96,165,250,0.25), inset 0 0 48px rgba(96,165,250,0.06); }
+.badge{ @apply px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs; }
